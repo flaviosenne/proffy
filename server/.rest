@@ -1,0 +1,37 @@
+### Classes
+
+POST  http://localhost:3333/classes
+Content-Type: application/json
+
+{
+    "name":"joao",
+    "avatar":"",
+    "whatsapp":"991452165",
+    "bio":"",
+    "subject":"Programação",
+    "cost":30,
+    "schedule":[
+        {"week_day": 1, "from": "8:00", "to":"12:00"},
+        {"week_day": 2, "from": "10:00", "to":"18:00"},
+        {"week_day": 3, "from": "8:00", "to":"12:00"}
+    ]
+}
+
+### Classes
+
+GET  http://localhost:3333/classes?week_day=1&subject=Programação&time=9:00
+Content-Type: application/json
+
+
+### Classes
+
+POST  http://localhost:3333/connections
+Content-Type: application/json
+
+{
+    "user_id":1
+}
+
+### Classes
+
+GET  http://localhost:3333/connections
